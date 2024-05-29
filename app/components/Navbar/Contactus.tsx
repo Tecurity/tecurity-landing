@@ -10,7 +10,8 @@ const Contactusform = () => {
     const [inputValues, setInputValues] = useState({
         input1: '',
         input2: '',
-        input3: ''
+        input3: '',
+        input4: ''
     });
 
     const handleChange = (e: { target: { name: string; value: string; }; }) => {
@@ -104,6 +105,21 @@ const Contactusform = () => {
                                                     required
                                                     className="relative block w-full appearance-none  rounded-md border border-linegrey px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                                                     placeholder="Name..."
+                                                />
+                                            </div>
+                                            <div>
+                                                <label htmlFor="text" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Contact Number</label>
+                                                <input
+                                                    id="text"
+                                                    name="input4"
+                                                    value={inputValues.input4}
+                                                    onChange={handleChange}
+
+                                                    type="contact"
+                                                    autoComplete="current-password"
+                                                    required
+                                                    className="relative block w-full appearance-none  rounded-md border border-linegrey px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                                    placeholder="Contact Number..."
                                                 />
                                             </div>
                                             <div>
